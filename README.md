@@ -32,7 +32,7 @@ pip install -r requirements.txt
 3. Ensure the variable `COLAB` at the start of the notebook is set to `False` (already the default in this version).
 4. Execute the cells one by one to set up your project, download images and tag them.
 
-The notebook will create a project directory under `./Loras` by default. Adjust paths inside the notebook if necessary.
+The notebook will create a project directory under `./Loras` by default. Adjust paths inside the notebook if necessary. To avoid directory mismatches when calling `os.chdir`, the notebooks convert these paths to absolute form using `os.path.abspath`.
 
 ## Notes
 
