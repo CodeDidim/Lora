@@ -36,4 +36,4 @@ The notebook will create a project directory under `./Loras` by default. Adjust 
 
 ## Notes
 
-The tagging step clones the `kohya-ss/sd-scripts` repository and installs its requirements inside a Python virtual environment. This process mirrors the behaviour of the original Colab notebook but runs entirely on your machine.
+The tagging step clones the `kohya-ss/sd-scripts` repository and installs its requirements inside a Python virtual environment. This process mirrors the behaviour of the original Colab notebook but runs entirely on your machine. On Windows, the notebook skips the `apt` command and uses `python -m venv` to create the environment automatically.
