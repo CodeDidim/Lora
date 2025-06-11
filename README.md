@@ -8,6 +8,8 @@ This repository contains Jupyter notebooks for creating and preparing LoRA datas
 - A CUDA-enabled GPU with the appropriate drivers
 - `aria2` and `python3.10-venv` system packages (Ubuntu example below)
 - Python packages listed in `requirements.txt`
+- If running on Python 3.11 or newer, ensure `timm` is at least version 0.9.2 to
+  avoid dataclass initialization errors
 
 Install the system dependencies (Ubuntu/Debian example):
 
