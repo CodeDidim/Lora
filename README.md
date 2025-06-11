@@ -8,8 +8,10 @@ This repository contains Jupyter notebooks for creating and preparing LoRA datas
 - A CUDA-enabled GPU with the appropriate drivers
 - `aria2` and `python3.10-venv` system packages (Ubuntu example below)
 - Python packages listed in `requirements.txt`
-- If running on Python 3.11 or newer, ensure `timm` is at least version 0.9.2 to
-  avoid dataclass initialization errors
+- If running on Python 3.11 or newer, make sure `timm` is version **0.9.2** or
+  newer. Older releases can throw a `ValueError: mutable default <class
+  'timm.models.maxxvit.MaxxVitConvCfg'> for field conv_cfg is not allowed: use
+  default_factory` error when running the notebooks.
 
 Install the system dependencies (Ubuntu/Debian example):
 
@@ -39,3 +41,4 @@ The notebook will create a project directory under `./Loras` by default. Adjust 
 ## Notes
 
 The tagging step clones the `kohya-ss/sd-scripts` repository and installs its requirements inside a Python virtual environment. This process mirrors the behaviour of the original Colab notebook but runs entirely on your machine. On Windows, the notebook skips the `apt` command and uses `python -m venv` to create the environment automatically.
+
